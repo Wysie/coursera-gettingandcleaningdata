@@ -1,3 +1,5 @@
+# README
+
 ### Introduction
 
 This repository is hosting the R code for the Getting and Cleaning Data Course Project.

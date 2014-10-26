@@ -38,5 +38,7 @@ colnames(mergedDataFiltered) <- c("Subject", "Activity", featuresFiltered$Featur
 
 #Step 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 newData = ddply(mergedDataFiltered, .(Subject, Activity), numcolwise(mean))
+names(newData)[-c(1,2)] <- paste0("mean-", names(newData)[-c(1,2)]) #Prefix all column names with mean- since all values are averages of each variable
+
 #write.csv(newData, "newData.csv", row.names=FALSE)
 write.table(newData, "newData.txt", sep = "\t", row.names=FALSE)
