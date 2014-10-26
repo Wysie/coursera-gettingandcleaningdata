@@ -35,4 +35,4 @@ This step uses the data available in activity_labels.txt to give each activity a
 This step renames "Label" to "Activity", and also gives each of the other data columns a name based on the feature/measurement, instead of having just numbers.
 
 ##### Step 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-This step makes use of ddply to summmarize the cleaned up data, and then writes it to a file "newData.csv".
+This step makes use of ddply to summmarize the cleaned up data, and then writes it to a file "newData.txt", which is a tab-delimited text file.
